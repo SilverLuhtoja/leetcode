@@ -11,7 +11,4 @@ var expect = function (val) {
   };
 };
 
-// let rev = expect(5).ToBe(2);
-let rev = expect(5).notToBe(1);
-console.log(rev);
 module.exports = expect;
