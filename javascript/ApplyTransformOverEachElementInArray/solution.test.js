@@ -8,7 +8,7 @@ describe('map', () => {
     let arr = [1, 2, 3];
 
     const newArray = map(arr, fn);
-    expect(newArray).toBe([2, 3, 4]);
+    expect(newArray).toStrictEqual([2, 3, 4]);
   });
 
   test('The function increases each value by the index it resides in.', () => {
@@ -18,7 +18,7 @@ describe('map', () => {
     let arr = [1, 2, 3];
 
     const newArray = map(arr, fn);
-    expect(newArray).toBe([1, 3, 5]);
+    expect(newArray).toStrictEqual([1, 3, 5]);
   });
 
   test('The function always returns 42.', () => {
@@ -28,6 +28,6 @@ describe('map', () => {
     let arr = [1, 2, 3];
 
     const newArray = map(arr, fn);
-    expect(newArray).toBe([42, 42, 42]);
+    expect(newArray).toStrictEqual([42, 42, 42]);
   });
 });
