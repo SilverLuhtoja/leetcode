@@ -1,7 +1,7 @@
 const filter = require('./solution');
 
 describe('map', () => {
-  test('The function increases each value in the array by one', () => {
+  test('Returns value greater than 10', () => {
     fn = function greaterThan10(n) {
       return n > 10;
     };
@@ -11,7 +11,7 @@ describe('map', () => {
     expect(newArray).toStrictEqual([20, 30]);
   });
 
-  test('The function increases each value by the index it resides in.', () => {
+  test('Returns values egual to 0', () => {
     fn = function firstIndex(n, i) {
       return i === 0;
     };
@@ -21,7 +21,7 @@ describe('map', () => {
     expect(newArray).toStrictEqual([1]);
   });
 
-  test('The function always returns 42.', () => {
+  test('test 3', () => {
     fn = function plusOne(n) {
       return n + 1;
     };
